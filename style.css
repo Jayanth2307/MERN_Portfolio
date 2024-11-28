@@ -195,43 +195,69 @@ footer a:hover{
 }
 
 /*responsive using media--- */
-@media screen and (min-width: 860px){
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
+@media (max-width: 992px) {
+    h1.wall1 {
+        font-size: 1.8em;
+    }
+
+    h2.wall2 {
+        font-size: 1em;
+    }
+
+    .resume-section {
+        margin: 15px 0;
     }
 }
-@media screen and (max-width: 859px){
-    footer {
+
+@media (max-width: 768px) {
+    h1.wall1 {
+        font-size: 1.5em;
+    }
+
+    h2.wall2 {
+        font-size: 0.9em;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%;
         text-align: center;
+    }
+
+    .resume-section {
         padding: 10px;
     }
 
-}
-
-@media screen and (max-width:650px){
-    .home .content-wrapper {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    .download-resume {
-        position: absolute;
-    }
-}
-
-@media screen and (max-width:500px){
     .project img {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
-@media screen and (max-width:500px){
+@media (max-width: 576px) {
+    h1.wall1 {
+        font-size: 1.3em;
+    }
+
+    h2.wall2 {
+        font-size: 0.8em;
+    }
+
     .achieve-item img {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 100%; /* Make achievement images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column; /* Stack social icons vertically */
+        align-items: center;
+    }
+
+    .social li {
+        margin: 5px 0; /* Space between social icons */
     }
 }
