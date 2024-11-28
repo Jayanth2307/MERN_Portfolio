@@ -193,3 +193,45 @@ footer a:hover{
 .social img:hover{
     opacity: 0.8;
 }
+
+/*responsive using media--- */
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 859px){
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .download-resume {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:500px){
+    .project img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .achieve-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
